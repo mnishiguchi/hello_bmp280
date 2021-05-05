@@ -20,4 +20,6 @@ if RingLogger in Application.get_env(:logger, :backends, []) do
 
     RingLogger.next
   """)
+
+  Circuits.I2C.detect_devices()
 end
